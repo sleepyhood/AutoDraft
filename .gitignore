@@ -1,0 +1,60 @@
+# ===== Secrets / Env =====
+.env
+.env.*
+!.env.example
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.coverage
+htmlcov/
+.coverage.*
+
+# ===== Virtualenv =====
+.venv/
+venv/
+ENV/
+env/
+.conda/
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.iml
+
+# ===== OS / Windows =====
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Local DB / artifacts =====
+autodraft.db
+*.sqlite
+*.sqlite3
+
+# ===== Generated exports =====
+exports/
+*.html
+
+# ===== ngrok =====
+# ngrok stores config on Windows here:
+# %USERPROFILE%\.config\ngrok\ngrok.yml
+# (Not inside project usually, but just in case)
+ngrok.yml
