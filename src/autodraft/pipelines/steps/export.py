@@ -89,6 +89,7 @@ def export_draft_html(db: Session, draft: Draft) -> Draft:
 """
     path.write_text(html, encoding="utf-8")
 
-    draft.export_html_ref = str(path)
+    draft.export_html_ref = f"/exports/{draft.id}.html"
+
     draft.updated_at = datetime.utcnow()
     return DraftRepo.save(db, draft)
